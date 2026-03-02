@@ -94,6 +94,7 @@
     const navAnchors = document.querySelectorAll('.nav__links ol a');
     // All elements that can be deep-linked, in DOM order
     const hashTargets = document.querySelectorAll('section[id], .project[id]');
+    let userHasScrolled = false;
 
     function updateActiveSection() {
         const trigger = window.scrollY + window.innerHeight / 3;
@@ -114,7 +115,12 @@
         navAnchors.forEach((a) => a.classList.remove('active'));
         if (activeLink) activeLink.classList.add('active');
 
-        // Update URL hash (clear it at the very top)
+        // Update URL hash only after the user has scrolled at least once,
+        // so we don't wipe a #hash anchor before the browser can jump to it.
+        if (!userHasScrolled) {
+            userHasScrolled = true;
+            return;
+        }
         const targetHash = (!currentId || currentId === 'hero') ? '' : `#${currentId}`;
         const currentHash = window.location.hash || '';
         if (targetHash !== currentHash) {
