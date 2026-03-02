@@ -200,9 +200,13 @@
                             partial-success handling.
                         </li>
                         <li>
-                            <strong>Retrieval Engine</strong> &mdash; Corrective RAG pipeline with Reciprocal Rank Fusion
-                            combining pgvector semantic search + PostgreSQL keyword search. Relevance grading with automatic
-                            query reformulation when confidence is low.
+                            <strong>Retrieval Engine</strong> &mdash; Corrective RAG with hybrid search: parallel
+                            pgvector cosine similarity and PostgreSQL full-text search (tsvector, ts_rank_cd
+                            weighting) over 50 candidates each, fused via single-pass Reciprocal
+                            Rank Fusion SQL (k=60, FULL OUTER JOIN). Cross-source fan-out across all data sources
+                            with global re-ranking. LLM-based relevance grading with automatic query reformulation
+                            when confidence is low. Separate JSONB metadata filter path for structured queries
+                            (channel, sender, date range).
                         </li>
                         <li>
                             <strong>MCP Tool Layer</strong> &mdash; 30 tools across 3 Lambda backends: 24 typed ORM handlers
