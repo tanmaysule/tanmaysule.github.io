@@ -1,596 +1,409 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Tanmay Sule | Engineer</title>
-
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tanmay Sule | Engineer" />
-  <meta property="og:description" content="Engineer" />
-  <meta property="og:url" content="http://tanmaysule.github.io/" />
-  <meta property="og:site_name" content="Tanmay Sule | Engineer" />
-  <meta property="article:publisher" content="http://tanmaysule.github.io/" />
-  <meta property="og:image" content="http://tanmaysule.github.io/examples/preview.JPG" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay Sule | Lead Engineer</title>
+    <meta name="description" content="Lead Engineer at Eightfold AI leading the agentic AI initiative. Building LLM-powered agents that automate engineering workflows, and multi-tenant RAG platforms from scratch.">
+    <meta property="og:title" content="Tanmay Sule | Lead Engineer">
+    <meta property="og:description" content="Lead Engineer at Eightfold AI leading the agentic AI initiative. Building LLM-powered agents that automate engineering workflows, and multi-tenant RAG platforms from scratch.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanmaysule.github.io">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
- 
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/profile.JPG" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
+    <!-- ========== NAV ========== -->
+    <header id="nav" class="nav">
+        <nav>
+            <a href="#" class="nav__logo" aria-label="Home">TS</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav__links" id="nav-links">
+                <ol>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                    <a href="assets/Tanmay_Sule_Resume.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Tanmay's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1fs6vGw0KMEdzff6z8xnmL6F-EoS-r6cL/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Tanmay's resume in a new tab" href="https://drive.google.com/file/d/1UTi_nNW2G2Dm6223FhKcxxJ6W0lYjyx-/view?usp=sharing"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Tanmay
-        Bhogayata</a><span class="black-text">Engineer</span>
+    <!-- ========== SOCIAL SIDEBAR ========== -->
+    <div class="social-sidebar social-sidebar--left" aria-hidden="true">
+        <ul>
+            <li><a href="https://github.com/tanmaysule" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/tanmay-sule-81a18019a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="mailto:suletanmay27@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+        </ul>
     </div>
-  </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+    <div class="social-sidebar social-sidebar--right" aria-hidden="true">
+        <a href="mailto:suletanmay27@gmail.com">suletanmay27@gmail.com</a>
+    </div>
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Tanmay's Resume in a new tab"
-          href="https://drive.google.com/file/d/1fs6vGw0KMEdzff6z8xnmL6F-EoS-r6cL/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Tanmay Sule.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/tanmay-sule-81a18019a/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/tanmaysule/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <p class="hero__greeting reveal">Hi, my name is</p>
+            <h1 class="hero__name reveal">Tanmay Sule.</h1>
+            <h2 class="hero__tagline reveal">I build production AI systems at scale.</h2>
+            <p class="hero__description reveal">
+                I'm a Lead Engineer at <a href="https://eightfold.ai" target="_blank" rel="noopener noreferrer">Eightfold AI</a>,
+                where I lead the company's agentic AI initiative. I build LLM-powered systems
+                that automate real engineering workflows &mdash; from production issue triage
+                to multi-tenant RAG platforms.
+            </p>
+            <a href="#work" class="btn btn--outline hero__cta reveal">View my work &darr;</a>
+        </section>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Engineer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->
-        <p>
-          I am a Computer Science Grad Student at Indian Institute of Science, Bangalore. 
-        </p>
-        <p>
-          
-          Detail-oriented Engineer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision. 
-        </p>
-        
-      </div>
-    </section>
-
-
-    <!-- Third Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/Savaari.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Savaari<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A Cab-hailing software using Spring Boot and Akka.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Java, SpringBoot, Kubernetes, Akka</li>
-                  <li>Savaari is a service provided to keep track of the cabs preent in your company and 
-                    assign appropiate cab to the customer requesting the cab by taking into account the distance of the 
-                    cabs from the customer and the account balance of the customer.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/tanmaysule/Savaari"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2 class="section__heading reveal"><span class="section__number">01.</span> About Me</h2>
+            <div class="about__content">
+                <div class="about__text reveal">
+                    <p>
+                        I'm a platform engineer who builds production AI systems. At Eightfold, I've spent 3+ years
+                        owning core infrastructure &mdash; horizontally-sharded databases across 40+ clusters,
+                        multi-cloud architecture (AWS &amp; Azure), and real-time analytics platforms &mdash; and now
+                        lead the company's agentic AI initiative on top of that foundation.
+                    </p>
+                    <p>
+                        On the side, I'm building a multi-tenant agentic RAG platform from scratch &mdash; a full-stack
+                        system with Go ETL pipelines, hybrid retrieval with automatic quality grading,
+                        two-level agent orchestration, and AWS Bedrock deployment.
+                    </p>
+                    <p>
+                        I hold a Master's from the <a href="https://iisc.ac.in" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>
+                        (IISc Bangalore) and ranked <strong>2nd out of 100,000+</strong> in India's GATE CS exam.
+                    </p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A music streaming web app based on Django
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/tanmaysule/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A music streaming web app based on Django
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/tanmaysule/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Fourth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" />Shell Scripting
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Libraries</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" />scikit-learn
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/django-logo.webp" class="responsive-img" />Django
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/keras-logo.png" class="responsive-img" />Keras
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/heroku.png" class="responsive-img" />Heroku
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- certifications -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certificates</h4>
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
-                      </div>
+                <div class="about__stats reveal">
+                    <div class="stat">
+                        <span class="stat__number">3+</span>
+                        <span class="stat__label">Years at Eightfold AI</span>
                     </div>
-                  </div>
-
-                  <div class="col s12 m6 l6">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title teal-text">Algorithms (Stanford)</span>
-                      </div>
+                    <div class="stat">
+                        <span class="stat__number">Rank 2</span>
+                        <span class="stat__label">GATE CS / 100K+</span>
                     </div>
-                  </div>
+                    <div class="stat">
+                        <span class="stat__number">Top 25</span>
+                        <span class="stat__label">of 1,000+ &middot; 2024</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">M.Tech</span>
+                        <span class="stat__label">IISc Bangalore</span>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div> -->
+        </section>
 
-      </div>
-    </section>
+        <!-- FEATURED WORK -->
+        <section id="work" class="section">
+            <h2 class="section__heading reveal"><span class="section__number">02.</span> Featured Work</h2>
 
-    <!-- Fifth Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="http://mu.ac.in/" target="_blank" class="teal-text hoverline">MUmbai University</a></span>
-                </p>
-                <p class="brown-text">Mumbai, India</p>
-                <p>
-                  <b>Degree: </b>Bachelor in Engineering     
-                  <br>
-                  <b>CGPA: </b>8.29/10
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Computer Networks</li>
-                  </ul>
-                  </p>
-
+            <!-- Project 1 -->
+            <div id="agentic-platform" class="project reveal">
+                <div class="project__label">Featured Project</div>
+                <h3 class="project__title">Agentic AI Developer Productivity Platform</h3>
+                <p class="project__role">Technical &amp; Project Lead &middot; Eightfold AI</p>
+                <div class="project__body">
+                    <p>
+                        Engineers were spending hours manually triaging production alerts, debugging build failures,
+                        and searching internal docs. I built the agent framework from scratch and 3 production LLM agents
+                        that automate these workflows, reducing time-to-resolution across the engineering organization.
+                        Mentored a team of new engineers into AI engineering while establishing org-wide standards.
+                    </p>
+                    <ul class="project__highlights">
+                        <li>
+                            <strong>Agent Framework</strong> &mdash; Custom 4-layer architecture on LangGraph/LangChain.
+                            Reusable abstractions with built-in observability middleware (per-invocation token tracking),
+                            multi-model LLM factory (GPT-5/4o/4o-mini), and centralized tool registry (9 tools).
+                        </li>
+                        <li>
+                            <strong>Sentry Production Triager</strong> &mdash; 3-stage pipeline: root cause analysis (GPT-5, 7 tools)
+                            &rarr; code fix classification &rarr; GitHub issue creation with automatic Copilot assignment
+                            for code fix. End-to-end AI-to-AI handoff: agent triages the issue, then assigns it to
+                            Copilot to generate the fix. Redis distributed locking for concurrent issue prevention.
+                        </li>
+                        <li>
+                            <strong>Build Failure Triager</strong> &mdash; Per-failure root cause analysis with cross-failure
+                            deduplication. Same root cause across multiple test failures &rarr; single GitHub issue,
+                            eliminating duplicate engineering effort. Multi-channel Slack reporting.
+                        </li>
+                        <li>
+                            <strong>Developer Chatbot</strong> &mdash; Slack-native conversational assistant that answers
+                            engineering questions by orchestrating specialized sub-agents. 8-step pipeline with
+                            intent classification, dynamic routing, concurrent tool execution, and structured
+                            Block Kit responses. Built-in multi-level error recovery.
+                        </li>
+                    </ul>
+                </div>
+                <ul class="project__tech">
+                    <li>Python</li>
+                    <li>LangGraph</li>
+                    <li>LangChain</li>
+                    <li>GPT-5 / 4o / 4o-mini</li>
+                    <li>Redis</li>
+                    <li>S3</li>
+                    <li>Slack API</li>
+                    <li>GitHub API</li>
+                    <li>Sentry API</li>
+                    <li>Pydantic</li>
                 </ul>
-              </div>
             </div>
 
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="http://iisc.ac.in/" target="_blank" class="teal-text hoverline">Indian Institute of Science</a></span>
-                </p>
-                <p class="brown-text">Bangalore, India</p>
-                <p>
-                  <b>Degree: </b>Masters in Technology
-                  <br>
-                  <b>CGPA: </b>8.1/10
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Design and Analysis Algorithms</li>
-                    <li>Computer Architecture</li>
-                    <li>Operating Systems</li>
-                    <li>Distributed Systems</li>
-                    <li>Systems Security</li>
-                  </ul>
-                  </p>
-
+            <!-- Project 2 -->
+            <div id="rag-platform" class="project reveal">
+                <div class="project__label">Featured Project</div>
+                <h3 class="project__title">Multi-Tenant Agentic RAG Platform</h3>
+                <p class="project__role">Sole Architect &amp; Engineer &middot; Independent Project</p>
+                <div class="project__body">
+                    <p>
+                        Full-stack conversational AI platform I designed and built from scratch. The core challenge:
+                        answering cross-domain business queries that require joining structured database records
+                        with unstructured communications (Slack, Email, Notion) &mdash; resolving entity references
+                        across data sources and producing evidence-based, source-attributed responses.
+                    </p>
+                    <ul class="project__highlights">
+                        <li>
+                            <strong>Agent Orchestration</strong> &mdash; Two-level architecture: L0 orchestrator
+                            (9-node LangGraph, 29-field state) handles classification, planning, and evaluation with
+                            persistent working memory (entity tracking, pronoun resolution, topic continuity across turns).
+                            L1 domain agents (5-node, plan-then-execute) decompose queries into DAGs of typed/SQL/search
+                            tasks with concurrent execution. Two-tier human-in-the-loop with crash-safe DynamoDB persistence.
+                        </li>
+                        <li>
+                            <strong>Data Pipeline</strong> &mdash; Go ETL with medallion architecture (Bronze &rarr; Silver &rarr; Gold).
+                            5 event-driven Lambdas, 6 source adapters, self-registering mapper registry normalizing
+                            40+ entity types. Content enrichment prepends source context (channel, sender, date) before
+                            embedding &mdash; so vectors capture provenance, improving filtered retrieval. Hybrid chunking,
+                            dual embedding providers (OpenAI + Bedrock Titan). Multi-layer error tracking with
+                            partial-success handling.
+                        </li>
+                        <li>
+                            <strong>Retrieval Engine</strong> &mdash; Corrective RAG pipeline with Reciprocal Rank Fusion
+                            combining pgvector semantic search + PostgreSQL keyword search. Relevance grading with automatic
+                            query reformulation when confidence is low.
+                        </li>
+                        <li>
+                            <strong>MCP Tool Layer</strong> &mdash; 30 tools across 3 Lambda backends: 24 typed ORM handlers
+                            (Go, ~20 entity types), 2 SQL tools with read-only guardrails (write blocklist, identifier
+                            validation, 500-row cap), 4 search tools (Python). JWT-based tenant authentication (Cognito).
+                            Bedrock AgentCore runtime with 13 SSE event types for real-time streaming.
+                        </li>
+                        <li>
+                            <strong>Infrastructure</strong> &mdash; 8 ARM64 Graviton Lambdas, Pulumi IaC (Go), per-tenant isolation
+                            (PostgreSQL schema-per-tenant, DynamoDB partitioning, dedicated MCP gateway instances).
+                            Provider-agnostic LLM factory supporting Anthropic and OpenAI, configurable per tenant.
+                        </li>
+                    </ul>
+                </div>
+                <ul class="project__tech">
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>LangGraph</li>
+                    <li>Claude Opus</li>
+                    <li>OpenAI</li>
+                    <li>Aurora PostgreSQL</li>
+                    <li>pgvector</li>
+                    <li>DynamoDB</li>
+                    <li>Bedrock AgentCore</li>
+                    <li>MCP</li>
+                    <li>Lambda</li>
+                    <li>Cognito</li>
+                    <li>Pulumi</li>
                 </ul>
-              </div>
             </div>
-          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <h2 class="section__heading reveal"><span class="section__number">03.</span> Experience</h2>
+            <div class="experience reveal">
+                <div class="experience__header">
+                    <h3>Lead Engineer &mdash; Core Infrastructure / Platform</h3>
+                    <p class="experience__company">
+                        <a href="https://eightfold.ai" target="_blank" rel="noopener noreferrer">Eightfold AI</a>
+                        &mdash; AI-powered talent intelligence platform serving Fortune 500 enterprises
+                    </p>
+                    <p class="experience__period">Aug 2022 &mdash; Present</p>
+                </div>
+                <div class="experience__items">
+                    <div class="experience__item">
+                        <h4>Agentic AI Initiative</h4>
+                        <p>
+                            Launched and led the company's first agentic AI effort, growing a team from 0 to 4 engineers.
+                            Piloted Cursor Agent and Copilot Agent adoption across engineering. Established org-wide
+                            standards for LLM integration, prompt management, and evaluation.
+                        </p>
+                    </div>
+                    <div class="experience__item">
+                        <h4>Cloud-Native Analytics Platform</h4>
+                        <p>
+                            Consolidated Redshift + Databricks into a unified StarRocks-based analytics layer, cutting
+                            query latency and simplifying BI reporting for product and data teams. Designed the end-to-end
+                            event-driven ETL pipeline (Firehose &rarr; S3 &rarr; SQS &rarr; Airflow).
+                        </p>
+                    </div>
+                    <div class="experience__item">
+                        <h4>Multi-Cloud Architecture</h4>
+                        <p>
+                            Core member of year-long AWS &rarr; Azure initiative, unblocking enterprise customers with
+                            Azure-only mandates. Designed cloud-agnostic service abstractions (Redis, OLTP, Blob Storage)
+                            and extended the distributed async platform &mdash; 100+ containers, 700K+ operations daily.
+                        </p>
+                    </div>
+                    <div class="experience__item">
+                        <h4>OLTP Database Platform</h4>
+                        <p>
+                            Owned Aurora MySQL at scale &mdash; 40+ clusters across 4 AWS regions. Drove zero-downtime
+                            major version upgrades via blue-green deployments. Delivered BYoK encryption saving
+                            $5,000/customer/year. Built internal CLI tooling for cluster management and migration automation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section__heading reveal"><span class="section__number">04.</span> Skills</h2>
+            <div class="skills__grid reveal">
+                <div class="skills__category">
+                    <h4>AI &amp; LLM Engineering</h4>
+                    <ul>
+                        <li>LangGraph</li>
+                        <li>LangChain</li>
+                        <li>Agent Orchestration</li>
+                        <li>MCP Servers</li>
+                        <li>RAG Pipelines</li>
+                        <li>Prompt Engineering</li>
+                        <li>Pydantic</li>
+                        <li>Embeddings</li>
+                        <li>Vector Search</li>
+                        <li>pgvector</li>
+                    </ul>
+                </div>
+                <div class="skills__category">
+                    <h4>Infrastructure &amp; Cloud</h4>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Azure</li>
+                        <li>Bedrock</li>
+                        <li>Lambda</li>
+                        <li>ECS</li>
+                        <li>Aurora</li>
+                        <li>DynamoDB</li>
+                        <li>S3</li>
+                        <li>SQS</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>CloudFormation</li>
+                        <li>Terraform</li>
+                        <li>Pulumi</li>
+                        <li>Grafana</li>
+                        <li>Prometheus</li>
+                    </ul>
+                </div>
+                <div class="skills__category">
+                    <h4>Languages &amp; Data</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>Rust</li>
+                        <li>C++</li>
+                        <li>Bash</li>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Redis</li>
+                        <li>StarRocks</li>
+                        <li>Airflow</li>
+                    </ul>
+                </div>
+                <div class="skills__category">
+                    <h4>Architecture &amp; Patterns</h4>
+                    <ul>
+                        <li>Distributed Systems</li>
+                        <li>Event-driven Architecture</li>
+                        <li>ETL Pipelines</li>
+                        <li>Medallion Architecture</li>
+                        <li>Multi-tenant Isolation</li>
+                        <li>Blue-Green Deployments</li>
+                        <li>Concurrency</li>
+                        <li>Message Brokers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h2 class="section__heading reveal"><span class="section__number">05.</span> Education &amp; Achievements</h2>
+            <div class="education reveal">
+                <div class="education__degree">
+                    <h3>Master of Technology</h3>
+                    <p class="education__school">Computer Science &amp; Automation &mdash; <a href="https://iisc.ac.in" target="_blank" rel="noopener noreferrer">Indian Institute of Science, Bangalore</a></p>
+                </div>
+                <div class="education__degree" style="margin-top: 24px;">
+                    <h3>Bachelor of Engineering</h3>
+                    <p class="education__school">Computer Engineering &mdash; Mumbai University</p>
+                </div>
+                <ul class="education__achievements">
+                    <li><strong>All India Rank 2</strong> out of 100,000+ in Graduate Aptitude Test in Engineering (GATE CS, 2020)</li>
+                    <li>Selected as one of the <strong>Top 25</strong> individuals in company-wide annual performance recognition (Eightfold AI, 2024)</li>
+                    <li>JLPT N4 &amp; N5 certification &mdash; Japanese-Language Proficiency Test</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section--contact">
+            <p class="section__overline reveal">06. What's Next?</p>
+            <h2 class="contact__heading reveal">Get In Touch</h2>
+            <p class="contact__text reveal">
+                I'm always interested in hearing about new opportunities in AI engineering,
+                infrastructure, and platform engineering. Whether you have a question or just
+                want to connect, feel free to reach out.
+            </p>
+            <a href="mailto:suletanmay27@gmail.com" class="btn btn--outline btn--lg reveal">Say Hello</a>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="https://github.com/tanmaysule" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/tanmay-sule-81a18019a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
         </div>
-      </div>
-    </section>
+        <p class="footer__credit">Designed &amp; Built by Tanmay Sule</p>
+    </footer>
 
-    <!-- Sixth Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Tanmay" data-position="top" data-tooltip="Call Tanmay"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Tanmay">+14805722456</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Tanmay" href="mailto:tanmay2798@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Tanmay" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Tanmay" href="mailto:tanmay2798@gmail.com"
-              class="hoverline">tanmay2798@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Tanmay on GitHub" href="http://github.com/tanmaysule" target="_blank"
-            data-position="top" data-tooltip="View Tanmay on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Tanmay on Github" href="http://github.com/tanmaysule" class="hoverline"
-              target="_blank">github.com/tanmaysule</a></a>
-        </p>
-        <p>
-          <a aria-label="View Tanmay on LinkedIn" href="https://www.linkedin.com/in/tanmay-sule-81a18019a/" target="_blank"
-            data-position="top" data-tooltip="View Tanmay on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Tanmay on LinkedIn" href="https://www.linkedin.com/in/tanmay-sule-81a18019a/"
-              class="hoverline" target="_blank">linkedin.com/in/tanmay-sule-81a18019a/</a></a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["System enthusiast", "Developer", "Fast Learner"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
